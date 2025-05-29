@@ -11,10 +11,10 @@ def _roll_validate():
 		showerror("Failure","Roll no should not be empty ")
 		a = 1
 	elif st_rno.get().isalpha():
-		showerror("Failure","Only numbers allowed for rollno")
+		showerror("Failure","Only numbers allowed for roll no")
 		b = 1
 	elif int(st_rno.get()) < 0:
-		showerror("Failue","Roll no should be greater than 0")
+		showerror("Failure","Roll no should be greater than 0")
 		c = 1
 	if a == 1 	or b == 1 or c == 1:
 		return 1
@@ -30,7 +30,7 @@ def _name_validate():
 		showerror("Failure","Only characters allowed for Name")
 		b = 1
 	elif len(st_nme.get()) < 2:
-		showerror("Failue","Length of name should be greater than 1")
+		showerror("Failure","Length of name should be greater than 1")
 		c = 1
 	if a == 1 	or b == 1 or c == 1:
 		return 1
@@ -47,7 +47,7 @@ def _marks_validate():
 		showerror("Failure","Only numbers allowed for marks")
 		b = 1
 	elif int(st_mks.get()) < 0:
-		showerror("Failue","Marks should be greater than 0")
+		showerror("Failure","Marks should be greater than 0")
 		c = 1
 	if a == 1 	or b == 1 or c == 1:
 		return 1
